@@ -11,4 +11,6 @@ Divide the Page into 3 rows
 
 ## Screenshots of the webpage
 
+### Home screen
+
 
