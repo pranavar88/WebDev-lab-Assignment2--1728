@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Div -1728</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top, .middle, .bottom {
+            margin: 5px;
+            border: 2px #909497;
+        }
+
+        .top {
+            display: flex;
+            height: 20%;
+        }
+
+        .middle {
+            display: flex;
+            height: 5%;
+        }
+
+        .bottom {
+            display: flex;
+            height: 80%;
+        }
+
+        .top > iframe, .middle > iframe, .bottom > iframe {
+            flex: 1;
+            border: 5px solid black;
+        }
+
+        .top > iframe:first-child {
+            flex: 0.1;
+        }
+
+        .middle > iframe {
+            flex-basis: 20%;
+        }
+
+        .bottom > iframe:first-child {
+            flex: 0.15;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <iframe src="frame2.html" name="fr1"></iframe>
+        <iframe src="frame1.html" name="fr2"></iframe>
+    </div>
+    <div class="middle">
+        <iframe src="home.html" name="fr3"></iframe>
+        <iframe src="login.html" name="fr4"></iframe>
+        <iframe src="registeration.html" name="fr5"></iframe>
+        <iframe src="cart.html" name="fr6"></iframe>
+        <iframe src="contact.html" name="fr7"></iframe>
+    </div>
+    <div class="bottom">
+        <iframe src="catalouge.html" name="fr8"></iframe>
+        <iframe src="frame9.html" name="fr9"></iframe>
+    </div>
+</body>
+</html>
